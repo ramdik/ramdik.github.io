@@ -22,7 +22,7 @@
   /* overflow */
      header {
        height: 900px;
-       overflow: visible;
+       overflow: hidden;
      }
 
   /* Flex */
