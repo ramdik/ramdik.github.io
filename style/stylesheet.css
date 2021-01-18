@@ -10,7 +10,7 @@ background-color: whitesmoke
     text-decoration: none;
     list-style: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow: visible;
+    /* overflow: visible; */
 }
 
 html {
@@ -276,6 +276,7 @@ main {
 
 .flex-expertise .key-expertise .fa {
     padding-bottom: 15px;
+    color:#6830c3;
 }
 
 .flex-expertise .key-expertise h2 {
@@ -292,6 +293,10 @@ main {
 
 .experience-container {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center flex-end;
@@ -304,11 +309,20 @@ main {
 /* Pendidikan */
 .experience-edu {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
     width: 100%;
     flex: 1;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    /* Android test */
+    -webkit-webkit: row gap 20px;
+    -moz-webkit: row gap 20px;
+    -ms-webkit: row gap 20px;
+    -o-webkit: row gap 20px;
+    row-gap: 20px;
 }
 
 .experience-edu h1 {
@@ -349,7 +363,12 @@ main {
     flex: 1;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    /* Test Android */
+    -webkit-webkit: row gap 20px;
+    -moz-webkit: row gap 20px;
+    -ms-webkit: row gap 20px;
+    -o-webkit: row gap 20px;
+    row-gap: 20px;
 }
 
 .experience-work h1 {
@@ -435,9 +454,7 @@ main {
     padding-top: 10px;
 }
 
-.flex-portofolio .portofolio-me .portofolio-img img.web:hover {
-    -ms-transform: scale(1.2); /* IE 9 */
-    -webkit-transform: scale(1.2); /* Safari 3-8 */
+.flex-portofolio .portofolio-me .portofolio-img img.web:hover { /* IE 9 */ /* Safari 3-8 */
     transform: scale(1.3);
 }
 
@@ -450,8 +467,6 @@ main {
 
 .hire-me .hire-me-btn .btn {
 	background-color:#6830c3;
-	-webkit-border-radius:14px;
-	-moz-border-radius:14px;
 	border-radius:14px;
 	display:inline-block;
 	cursor:pointer;
