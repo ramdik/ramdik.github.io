@@ -1,0 +1,516 @@
+/* color pallet
+tulisan : #272522
+background-color: whitesmoke
+*/
+/* default CSS, sampe body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: visible;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:white;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(rgba(255, 255, 255, 0.555), rgba(255, 255, 255, 0.555)), url("assets/motor-768750_1920.jpg");
+    background-repeat: repeat;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+.header-left h3 {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 35px;
+    padding: 10px;
+    border-radius: 40px 40px 40px 0px;
+    color:rgba(245, 245, 245, 0.829);
+    background-color: #6930c3;
+}
+
+.header-left h1 {
+    font-size: 45px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    color: #272522;
+}
+
+.header-left h2 {
+    font-size: 25px;
+    opacity: 0.9;
+    color: #272522;
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact ul li{
+    margin: 2px 0;
+    padding: 2px;
+}
+
+.contact li a {
+    color: #272522;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.contact ul li .fa {
+    margin-right: 10px;
+}
+
+.contact ul li a:hover {
+    color: #6930c3;
+}
+
+/* Icon LH upper */
+.findme-wrapper {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0;
+    margin-top: 35px;
+    width: 55%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.findme-wrapper a {
+    padding: 8px 12px;
+    border-radius: 10%;
+    color: #272522;
+    display: inline-block;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3 ease;
+}
+
+.findme-wrapper a:hover {
+    background-color: #272522;
+    color: #6930c3;
+}
+
+.img-border {
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    border: 25px solid #27252228;
+    border-radius: 100%;
+}
+
+.img-border img {
+    width: 400px;
+    height: 400px;
+    border: 25px solid #4e4a448a;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+/* Main */
+main {
+    width: 100%;
+    /* height: 600px; */
+    background-color: whitesmoke;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.about-img-container {
+    flex: 1;
+}
+
+.about-img-container #about-img {
+    float: right;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-right: 20%;
+    height: 400px;
+    width: 400px;
+}
+
+.about-me-container {
+    flex: 1;
+    color: #272522;
+}
+
+.about-me-container #about-me {
+    width: 90%;
+    float: left;
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#about-me h1 {
+    opacity: 0.9;
+    padding-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+#about-me p {
+    line-height: 1.6;
+}
+
+#list-skills {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 0;
+    float: inline-start;
+}
+
+#list-skills h3 {
+    padding-left: 10px;
+    padding-bottom: 15px;
+    opacity: 0.9;
+}
+/* edit flex */
+#list-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+#list-skills ul li {
+    padding: 12px 6px;
+    display: inline;
+}
+
+/* Tooltip List */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 1.5px solid #6830c3;
+    border-radius: 6px 6px 6px 6px;
+    padding: 4px 6px;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #6830c3;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: 5px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* skill */
+.expertise-container {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    color: #272522;
+    opacity: 0.9;
+}
+
+.expertise-container h1 {
+    padding-bottom: 20px;
+}
+
+.flex-expertise {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.flex-expertise .key-expertise {
+    flex: 1;
+    gap: 10px;
+    padding: 15px;
+    width: 100%;
+    height: 200px;
+    text-align: left;
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.281);
+}
+
+.flex-expertise .key-expertise .fa {
+    padding-bottom: 15px;
+}
+
+.flex-expertise .key-expertise h2 {
+    padding-bottom: 15px;
+}
+
+/* Experience */
+.experience {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.651), rgba(255, 255, 255, 0.637)), url("assets/motor-768750_1920.jpg");
+    background-repeat: repeat;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center flex-end;
+    padding: 80px;
+    gap: 30px;
+    color: #272522;
+    opacity: 0.9;
+}
+
+/* Pendidikan */
+.experience-edu {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-edu h1 {
+    text-align: start;
+}
+
+.experience-edu .edu {
+    width: 65%;
+    height: 130px;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.856);
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.589);
+}
+
+.experience-edu .edu h3, h4 {
+    padding-bottom: 15px;
+}
+
+/* Non-formal */
+.experience-edu .non-formal p a {
+    float: right;
+    padding: 3px 10px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    color: whitesmoke;
+    background-color: #6830c3;
+}
+
+.experience-edu .non-formal p a:hover {
+    background-color:#272522 ;
+}
+
+/* Kerja */
+.experience-work {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-work h1 {
+    text-align: start;
+}
+
+.experience-work .work-at {
+    width: 65%;
+    height: 130px;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.856);
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.589);
+}
+
+.experience-work .work-at h3, h4 {
+    padding-bottom: 15px;
+}
+
+/* Portofolio */
+.portofolio {
+    background-color: #f5f5f5;
+}
+
+.container-portofolio {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    color: #272522;
+    opacity: 0.9;
+}
+
+.container-portofolio h1 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 34px;
+}
+
+/* Quote */
+.container-portofolio .quote {
+    font-style: italic;
+    font-size: 25px;
+}
+
+.flex-portofolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 25px;
+    padding-top: 50px;
+}
+
+.flex-portofolio .portofolio-me {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.flex-portofolio .portofolio-me .portofolio-img {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+}
+
+.flex-portofolio .portofolio-me .portofolio-img img {
+    width: 250px;
+    height: 100%;
+    transition: transform 0.5s;
+    margin: 0 auto;
+    border-radius: 10%;
+    box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.589);
+    z-index: 100000;
+}
+
+.flex-portofolio .ke3 .portofolio-img img {
+    opacity: 1;
+}
+
+.flex-portofolio .portofolio-me h3 {
+    padding-top: 10px;
+}
+
+.flex-portofolio .portofolio-me .portofolio-img img.web:hover {
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.3);
+}
+
+/* Hire me button */
+.hire-me {
+    background-color: whitesmoke;
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.hire-me .hire-me-btn .btn {
+	background-color:#6830c3;
+	-webkit-border-radius:14px;
+	-moz-border-radius:14px;
+	border-radius:14px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:18px;
+    font-weight: bold;
+	padding:16px 40px;
+    text-decoration:none;
+}
+.hire-me .hire-me-btn .btn:hover {
+	background-color:#7848c4;
+}
+.hire-me .hire-me-btn .btn:active {
+	position:relative;
+	top:1px;
+}
+
+/* Footer */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+.container .copyright {
+    flex: 1;
+    width: 100%;
+    margin-top: 2em;
+    max-height: 100%;
+    position: relative;
+}
+
+.container .contact {
+    flex: 1;
+    margin-left: 0;
+    width: 100%;
+    max-height: 100%;
+    position: relative;
+    transform: translateY(-25px);
+}
+
+.container .contact ul li {
+    display: inline-block;
+}
+
+.container .contact .fa {
+    position: relative;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.container .copyright {
+    font-size: 15px;
+}
+
