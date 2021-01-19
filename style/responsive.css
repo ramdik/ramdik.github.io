@@ -19,10 +19,14 @@
 }
 
 @media screen and (max-width: 800px) {
-  /* overflow */
+  /* Header */
      header {
        height: 900px;
        overflow: visible;
+     }
+
+     .header-left h1 {
+      font-size: 35px;
      }
 
   /* Flex */
@@ -77,6 +81,9 @@
       padding-right: 15px;
     }
 
+    .about-me-container #about-me {
+      margin-bottom: 30px; /* responsive */
+    }
   /* Skill */
     .flex-expertise,.about-container {
       flex: 100%;
@@ -93,6 +100,7 @@
 
     .flex-expertise .key-expertise {
       text-align: center;
+      margin-bottom: 20px;
     }
 
   /* Experience */
@@ -106,6 +114,7 @@
       width: 100%;
       flex: 100%;
       flex-direction: column;
+      margin-bottom: 20px;
     }
 
     .experience-edu h1, .experience-work h1 {
