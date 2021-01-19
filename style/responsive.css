@@ -104,6 +104,10 @@
     }
 
   /* Experience */
+    .experience-container {
+      padding: 50px;
+    }
+    
     .experience-edu, .experience-work, .experience-container {
       flex: 100%;
       flex-direction: column;
